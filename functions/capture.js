@@ -32,9 +32,9 @@ exports.handler = async function(event,context) {
     return
   }
 
-  const url = "https://youthful-jones-fe1131.netlify.app"
-  const imageParams = objectToParams(event.queryStringParameters)
-  const screenshot = await takeScreenshot(`${url}/?${imageParams}`)
+  const url = "shil.me"
+  const imageParams = "gokhan" // objectToParams(event.queryStringParameters)
+  const screenshot = await takeScreenshot(`${url}/${imageParams}`)
   return {
       statusCode: 200,
       headers: {
